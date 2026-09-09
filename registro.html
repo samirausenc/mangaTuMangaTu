@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - Manga House</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <section class="seccion">
+
+            <div class="titulo">
+                <p>MANGA HOUSE</p>
+                <h2>Crear cuenta</h2>
+            </div>
+
+            <form id="formularioRegistro" class="formulario-contacto">
+
+                <div class="campo">
+                    <label for="nombreRegistro">Nombre</label>
+                    <input type="text" id="nombreRegistro"
+                        placeholder="Ej: Vicente">
+                    <small id="errorNombreRegistro" class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="correoRegistro">Correo</label>
+                    <input type="text" id="correoRegistro"
+                        placeholder="Ej: correo@gmail.com">
+                    <small id="errorCorreoRegistro" class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="passwordRegistro">Contraseña</label>
+                    <input type="password" id="passwordRegistro"
+                        placeholder="Contraseña">
+                    <small id="errorPasswordRegistro" class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="confirmarPassword">Confirmar contraseña</label>
+                    <input type="password" id="confirmarPassword"
+                        placeholder="Repite tu contraseña">
+                    <small id="errorConfirmarPassword" class="error"></small>
+                </div>
+
+                <button type="submit">Registrarse</button>
+
+                <div id="mensajeRegistro"></div>
+
+            </form>
+
+            <p>
+                ¿Ya tienes una cuenta?
+                <a href="login.html">Inicia sesión</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="js/usuarios.js"></script>
+
+</body>
+</html>

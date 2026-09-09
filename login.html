@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión - Manga House</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <section class="seccion">
+
+            <div class="titulo">
+                <p>MANGA HOUSE</p>
+                <h2>Iniciar sesión</h2>
+            </div>
+
+            <form id="formularioLogin" class="formulario-contacto">
+
+                <div class="campo">
+                    <label for="correoLogin">Correo</label>
+                    <input type="text" id="correoLogin"
+                        placeholder="Ej: correo@gmail.com">
+                    <small id="errorCorreoLogin" class="error"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="passwordLogin">Contraseña</label>
+                    <input type="password" id="passwordLogin"
+                        placeholder="Contraseña">
+                    <small id="errorPasswordLogin" class="error"></small>
+                </div>
+
+                <button type="submit">Iniciar sesión</button>
+
+                <div id="mensajeLogin"></div>
+
+            </form>
+
+            <p>
+                ¿No tienes una cuenta?
+                <a href="registro.html">Regístrate</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="js/usuarios.js"></script>
+
+</body>
+</html>
