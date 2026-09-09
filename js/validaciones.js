@@ -75,7 +75,7 @@ formulario.addEventListener(
         } else {
             // REGLA 5 — Dominios de correo permitidos
             const dominioPermitido =
-                correo.endsWith("@gmail.com");
+                correo.endsWith("@gmail.com") ||
                 correo.endsWith("@hotmail.com");
 
             if (!dominioPermitido) {
